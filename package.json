@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "storybook": "start-storybook"
+	"storybook": "start-storybook",
+	"build-storybook": "build-storybook -c .storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
