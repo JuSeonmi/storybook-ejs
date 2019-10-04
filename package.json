@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-	"storybook": "start-storybook",
-	"build-storybook": "build-storybook -c .storybook"
+    "storybook": "start-storybook",
+    "build": "build-storybook -c .storybook",
+    "deploy": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
+    "@storybook/addon-centered": "^5.2.1",
+    "@storybook/addon-events": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addon-notes": "^5.2.1",
     "@storybook/html": "^5.1.11",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.6",
     "ejs-compiled-loader": "^1.1.0"
   }
