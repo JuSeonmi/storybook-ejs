@@ -1,10 +1,28 @@
-import { configure } from '@storybook/html'
-import { withNotes } from '@storybook/addon-notes'
 
-function loadStories() {
-  const req = require.context('../src/stories', true, /\.stories\.js$/)
-  req.keys().forEach(filename => req(filename))
-}
 
-configure(loadStories, module)
-addDecorator(withNotes)
+import { configure, addParameters, addDecorator } from '@storybook/html';
+import { withA11y } from '@storybook/addon-a11y';
+
+addDecorator(withA11y);
+
+addParameters({
+	backgrounds: [
+		{ name: 'bg', value: '#efefef', default: true },
+		{ name: 'facebook', value: '#3b5998' },
+	  ],
+	a11y: {
+		config: {},
+		options: {
+		checks: { 'color-contrast': { options: { noScroll: true } } },
+		restoreScroll: true,
+		},
+	},
+	options: {
+		hierarchyRootSeparator: /\|/,
+	},
+	docs: {
+		iframeHeight: '200px',
+	},
+});
+
+configure(require.context('../stories', true, /\.stories\.(js|mdx)$/), module);

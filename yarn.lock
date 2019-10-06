@@ -835,6 +835,22 @@
     react-inspector "^3.0.2"
     uuid "^3.3.2"
 
+"@storybook/addon-backgrounds@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-5.2.1.tgz#9f705870faacbc693db7f2d3f08f739e4759026d"
+  integrity sha512-vNNqKvZ+aAf4e6szdMKIXgancu+AzeKXvHtXiAgrMd5ihKAMgDjdy7G13xMpbrYSb5V4luzDsy6pYg3Az7KvLA==
+  dependencies:
+    "@storybook/addons" "5.2.1"
+    "@storybook/api" "5.2.1"
+    "@storybook/client-logger" "5.2.1"
+    "@storybook/components" "5.2.1"
+    "@storybook/core-events" "5.2.1"
+    "@storybook/theming" "5.2.1"
+    core-js "^3.0.1"
+    memoizerific "^1.11.3"
+    react "^16.8.3"
+    util-deprecate "^1.0.2"
+
 "@storybook/addon-centered@^5.2.1":
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/@storybook/addon-centered/-/addon-centered-5.2.1.tgz#605ffb005d5cb09dba6742ca6bf79b097940123e"
@@ -1107,7 +1123,7 @@
     webpack-dev-middleware "^3.7.0"
     webpack-hot-middleware "^2.25.0"
 
-"@storybook/html@^5.1.11":
+"@storybook/html@^5.2.1":
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/@storybook/html/-/html-5.2.1.tgz#4a4e57b5466b5cec501f183d513705c5e86c95fa"
   integrity sha512-TQagC59cZNQWvVfeDCUK2V4sXEc3631Oc393EX/1HRD2n1e1WctUeFaNwPYXnN95X1bwSkGY0rsc8dBidNyTIA==
